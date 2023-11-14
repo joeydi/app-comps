@@ -1,0 +1,221 @@
+$white: #faf7f8;
+$light-blue: #b4cad6;
+$dark-blue: #1b3949;
+$darker-blue: #031621;
+
+@import "features";
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+        "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    a {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        height: 5vw;
+        opacity: 0;
+    }
+
+    a:nth-child(1) {
+        left: 8%;
+        width: 13%;
+    }
+
+    a:nth-child(2) {
+        left: 28%;
+        width: 9%;
+    }
+
+    a:nth-child(3) {
+        left: 39%;
+        width: 9%;
+    }
+
+    a:nth-child(4) {
+        left: 50%;
+        width: 8%;
+    }
+
+    a:nth-child(5) {
+        left: 60%;
+        width: 4%;
+    }
+
+    a:nth-child(6) {
+        left: 66%;
+        width: 6%;
+    }
+
+    img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .backdrop {
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(20px);
+        background: transparentize(#020910, 0.1);
+        opacity: 0;
+    }
+}
+
+main {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.resize-indicator {
+    position: fixed;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+    font-weight: bold;
+    transition: opacity 0.5s;
+    transform-origin: 100% 0;
+    color: $white;
+
+    header.v2 & {
+        color: $dark-blue;
+    }
+}
+
+.spline {
+    position: absolute;
+    z-index: 1;
+    left: 10vw;
+    top: -15vw;
+    width: 100vw;
+    height: 90vw;
+    overflow: hidden;
+
+    canvas {
+        position: relative;
+        top: 26%;
+    }
+}
+
+a.article-link {
+    position: absolute;
+    left: 9.375%;
+    top: 30.2%;
+    width: 81.25%;
+    display: block;
+    height: 50.5%;
+    opacity: 0;
+}
+
+section.mosaic {
+    position: absolute;
+    left: 0;
+    top: 33.9%;
+    width: 100%;
+    display: block;
+    height: 34.2%;
+
+    .video-end-trigger {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 56.25vw;
+    }
+
+    video {
+        display: block;
+        width: 100%;
+    }
+
+    .images {
+        height: 179.6vw;
+    }
+
+    .image {
+        position: absolute;
+    }
+
+    .image-1 {
+        left: 9.375%;
+        top: 26.5%;
+        width: 40.6%;
+    }
+
+    .image-2 {
+        left: 63.7%;
+        top: 30.5%;
+        width: 26.9%;
+    }
+
+    .image-3 {
+        left: 50%;
+        top: 45.9%;
+        width: 40.6%;
+    }
+
+    .image-4 {
+        left: 9.375%;
+        top: 49.9%;
+        width: 26.9%;
+    }
+
+    .image-5 {
+        left: 9.375%;
+        top: 65.2%;
+        width: 40.6%;
+    }
+
+    .image-6 {
+        left: 63.7%;
+        top: 69.2%;
+        width: 26.9%;
+    }
+
+    .image-7 {
+        left: 50%;
+        top: 84.6%;
+        width: 40.6%;
+    }
+
+    .image-8 {
+        left: 9.375%;
+        top: 88.6%;
+        width: 26.9%;
+    }
+}
