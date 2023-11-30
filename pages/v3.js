@@ -12,7 +12,7 @@ export default function Home() {
             </Head>
             <Header />
             <main>
-                <img src="homepage-v15.png" width="3840" height="8900" alt="" />
+                <img src="homepage-v15.png" width="3840" height="10480" alt="" />
             </main>
         </>
     );
