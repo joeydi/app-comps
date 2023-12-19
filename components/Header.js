@@ -23,12 +23,10 @@ export default function Header() {
 
     return (
         <header>
-            {/* <Link href="/">Home</Link>
-            <Link href="/applications">Applications</Link>
-            <Link href="/our-approach">Our Approach</Link>
-            <Link href="/who-we-are">Who We Are</Link>
-            <Link href="/news">News</Link>
-            <Link href="/support">Support</Link> */}
+            <Link href="/">Home</Link>
+            <Link href="/product">Products</Link>
+            <Link href="/industry">Industries</Link>
+            <Link href="/about">About Us</Link>
             <div ref={backdropNode} className="backdrop" style={{ opacity: scale }}></div>
             <img src="/header-light.png" width="3840" height="200" alt="" />
             <ResizeIndicator />

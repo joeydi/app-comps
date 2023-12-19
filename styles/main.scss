@@ -34,37 +34,28 @@ header {
         z-index: 2;
         display: block;
         height: 5vw;
+        // outline: 1px solid red;
         opacity: 0;
     }
 
     a:nth-child(1) {
-        left: 8%;
-        width: 13%;
+        left: 12%;
+        width: 9%;
     }
 
     a:nth-child(2) {
-        left: 28%;
-        width: 9%;
+        left: 31%;
+        width: 7%;
     }
 
     a:nth-child(3) {
         left: 39%;
-        width: 9%;
+        width: 7%;
     }
 
     a:nth-child(4) {
-        left: 50%;
-        width: 8%;
-    }
-
-    a:nth-child(5) {
-        left: 60%;
-        width: 4%;
-    }
-
-    a:nth-child(6) {
-        left: 66%;
-        width: 6%;
+        left: 57%;
+        width: 6.5%;
     }
 
     img {
